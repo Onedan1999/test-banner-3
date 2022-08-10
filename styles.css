@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  color: white;
+}
+
+.banner {
+  width: 1000px;
+  height: 450px;
+  background-image: url('https://i.ibb.co/SBWzKWk/Booking-Banner-2-BG-2.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0px 0px 100px #008cff42;
+}
+
+.banner-left {
+  align-items: center;
+  display: flex;
+  padding-left: 80px;
+}
+
+.banner-heading {
+  font-size: 64px;
+  font-weight: bolder;
+  width: 80%;
+  margin-bottom: 14px;
+  margin-top: -20px;
+}
+
+.banner-txt {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 44px;
+}
+
+.banner-btn {
+  padding: 14px 24px;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #003b95;
+  border: 2px solid white;
+}
+
+.banner-btn:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10px;
+    background-position: 35% 75%;
+  }
+
+  .banner-left {
+    display: flex;
+    padding: 40px;
+    padding-left: 40px;
+  }
+
+  .banner-heading {
+    font-size: 44px;
+    font-weight: bolder;
+    width: 80%;
+    margin-bottom: 8px;
+    margin-top: 0px;
+  }
+
+  .banner-txt {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+}
